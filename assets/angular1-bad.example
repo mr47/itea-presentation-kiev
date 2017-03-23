@@ -1,0 +1,6 @@
+// production ready code
+// some where ..
+
+$filter('i18n')(label) + (item.count ? ' (' + $filter('number')(item.count) + ')' : '');
+
+// other ready code

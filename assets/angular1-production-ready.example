@@ -1,0 +1,12 @@
+function findNestedItem(items, itemId) {
+    var childResult = null;
+    var returnedValue = _.find(items, function (item) {
+        if (item.id == itemId) return true;
+        else if (item.children && item.children.length) {
+            childResult = findNestedItem(item.children, itemId);
+            return !_.isEmpty(childResult);
+        }
+        else return false;
+    });
+    return childResult || returnedValue;
+}

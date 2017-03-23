@@ -1,0 +1,25 @@
+// imports etc ...
+
+@Component({
+  selector: 'app-common-popup',
+  templateUrl: './common-popup.component.html',
+  styleUrls: ['./common-popup.component.scss']
+})
+export class CommonPopupComponent implements AfterViewInit {
+
+  // ...
+
+  constructor(private sanitizer: DomSanitizer, private comPopupService: CommonPopupService) {}
+
+  ngAfterViewInit(): void {
+    this.comPopupService.pushData.subscribe( () => {
+      const {title, content, footer, disabledSubmit } = this.comPopupService;
+      this.title = title;
+      this.content = this.sanitizer.bypassSecurityTrustHtml(content);
+      this.footer = footer;
+      this.disabledSubmit = disabledSubmit;
+      this.showPopup = true;
+    });
+  }
+
+}

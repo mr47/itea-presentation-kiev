@@ -1,0 +1,23 @@
+import { Directive, HostListener, ElementRef } from '@angular/core';
+import { window } from '@angular/platform-browser/src/facade/browser';
+
+@Directive({
+  selector: '[appCommonVerticalAlign]'
+})
+export class AdaptiveContainer {
+
+  ngAfterViewInit(private ngzone: NgZone) {
+    this.ngzone.runOutsideAngular( () => {
+      Observable.fromEvent(window, 'resize')
+        .throttleTime(200)
+        .subscribe(e => {
+            const result = (event && event.target.innerHeight || 0);
+            this.elementRef.nativeElement.style.height = `${result}px`;
+        });
+    });
+  }
+
+  constructor( private elementRef: ElementRef) {
+    this.elementRef.nativeElement.style.height = (window.innerHeight && `${window.innerHeight}px`);
+  }
+}
