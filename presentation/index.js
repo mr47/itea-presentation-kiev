@@ -148,7 +148,7 @@ export default class Presentation extends React.Component {
                         </Appear>
                         <Appear fid="3">
                             <Heading size={1} caps fit textColor="primary">
-                                хотя есть react ?
+                                хотя есть react?
                             </Heading>
                         </Appear>
                     </Slide>
@@ -162,7 +162,7 @@ export default class Presentation extends React.Component {
 
                     <Slide transition={["fade"]} bgColor="secondary" textColor="primary">
                         <Heading size={1} fit caps lineHeight={1} textColor="primary">
-                            Что же дал jQuery когда появился :
+                            Что же дал jQuery, когда появился:
                         </Heading>
                         <List>
                             <Appear><ListItem>Удобство</ListItem></Appear>
@@ -173,7 +173,7 @@ export default class Presentation extends React.Component {
 
                     <Slide transition={["zoom", "fade"]} bgColor="primary">
                         <Heading size={1} fit caps lineHeight={1}>
-                            Магия которая покорила нас:
+                            Магия, которая покорила нас:
                         </Heading>
                         <CodePane
                             lang="js"
@@ -185,7 +185,8 @@ export default class Presentation extends React.Component {
                     <Slide transition={["slide"]} bgColor="black">
                         <BlockQuote>
                             <Quote>Angular 2, Поехали!</Quote>
-                            <Cite>«Так говорил Гагарин, а его все любят правда ?»</Cite>
+                            <Cite>«Так говорил Гагарин, а его все любят правда?»</Cite>
+/* TODO: Не смешно, придумать интереснее */
                         </BlockQuote>
                     </Slide>
 
@@ -245,7 +246,7 @@ export default class Presentation extends React.Component {
 
                     <Slide transition={["slide"]} bgColor="black">
                         <BlockQuote>
-                            <Quote>Втроде обычный компонет!?</Quote>
+                            <Quote>Вроде, обычный компонет!?</Quote>
                             <Cite>«а вот и нет»</Cite>
                         </BlockQuote>
                     </Slide>
@@ -291,7 +292,7 @@ export default class Presentation extends React.Component {
                     <Slide transition={["slide"]} bgColor="black">
                         <BlockQuote>
                             <Quote>One component to rule them all!</Quote>
-                            <Cite>«Один компонент чтобы править ими всеми!»</Cite>
+                            <Cite>«Один компонент, чтобы править ими всеми!»</Cite>
                         </BlockQuote>
                     </Slide>
 
@@ -378,7 +379,7 @@ export default class Presentation extends React.Component {
 
                     <Slide transition={["slide"]} bgColor="black">
                         <BlockQuote>
-                            <Quote>UI/UX become is more and more important</Quote>
+                            <Quote>UI/UX become more and more important</Quote>
                             <Cite>«UI / UX становятся все более и более важным»</Cite>
                         </BlockQuote>
                     </Slide>
@@ -389,7 +390,7 @@ export default class Presentation extends React.Component {
 
                     <Slide transition={["slide"]} bgImage={images.flash.replace("/", "")} bgDarken={0.75}>
                         <BlockQuote>
-                            <Quote>I am the faster man alive.</Quote>
+                            <Quote>I am the fastest man alive.</Quote>
                             <Cite>«The Flash»</Cite>
                         </BlockQuote>
                     </Slide>
@@ -421,7 +422,7 @@ export default class Presentation extends React.Component {
 
                     <Slide transition={["slide"]} bgImage={images.city2.replace("/", "")} bgDarken={0.75}>
                         <BlockQuote>
-                            <Quote>Modern technology is magic.</Quote>
+                            <Quote>Any sufficiently advanced technology is indistinguishable from magic.</Quote>
                             <Cite>«Современные техноглогии похожи на магию.»</Cite>
                         </BlockQuote>
                     </Slide>
@@ -431,7 +432,7 @@ export default class Presentation extends React.Component {
                             <Appear><ListItem>Следите за трендами, а не следуйте</ListItem></Appear>
                             <Appear><ListItem>Изучайте больше</ListItem></Appear>
                             <Appear><ListItem>Отдыхайте</ListItem></Appear>
-                            <Appear><ListItem>Курсы хороший способ начать</ListItem></Appear>
+                            <Appear><ListItem>Курсы - хороший способ начать</ListItem></Appear>
                             <Appear><ListItem>KISS</ListItem></Appear>
                         </List>
                     </Slide>
@@ -439,7 +440,7 @@ export default class Presentation extends React.Component {
                     <Slide transition={["slide"]} bgImage={images.angularT.replace("/", "")} bgDarken={0.75}>
                         <BlockQuote>
                             <Quote>Как выглядит типичный проект</Quote>
-                            <Cite>на angular 2 конечно!</Cite>
+                            <Cite>на angular 2, конечно!</Cite>
                         </BlockQuote>
                     </Slide>
 
